@@ -26,6 +26,7 @@
 body {
 	font-family: var(--body-font);
 	background-color: var(--body-color);
+	padding-bottom: 350rem;
 }
 
 a {
@@ -74,6 +75,60 @@ img {
 	position: relative;
 	z-index: 10;
 	color: var(--white-color);
+}
+
+.card__perfil {
+	width: 80px;
+	border: 4px solid var(--white-color);
+	border-radius: 50%;
+	margin: 0 auto .5rem;
+}
+
+.card__name {
+	font-size: var(--h3-font-size);
+	font-weight: 600;
+	margin-bottom: .5rem;
+}
+
+.card__description {
+	font-size: var(--small-font-size);
+	font-weight: 300;
+	margin-bottom: 1.75rem;
+}
+
+.card__actions {
+	display: grid;
+	justify-content: center;
+}
+
+.card__button {
+	width: 48px;
+	height: 48px;
+	border: none;
+	outline: none;
+	border-radius: 50%;
+	background-color: var(--first-color);
+	color: var(--white-color);
+	font-size: 1.5rem;
+	box-shadow: 0 4px 12px hsla(150, 62%, 8%, .7);
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.card__more, 
+.card__close {
+	position: absolute;
+	transition: opacity .1s, transform .4s;
+}
+
+.card__close {
+	opacity: 0;
+}
+
+.card__article:hover .card__bg {
+	transform: scale(1.2);
 }
 
 /* Show social */
