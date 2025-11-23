@@ -131,6 +131,51 @@ img {
 	transform: scale(1.2);
 }
 
+.card__menu {
+	background-color: var(--first-color);
+	padding: .35rem 1rem;
+	border-radius: 4rem;
+	box-shadow: 0 4px 12px hsla(150, 62%, 8%, .7);
+	display: flex;
+	column-gap: 5rem;
+	position: absolute;
+	justify-self: center;
+	align-self: center;
+	overflow: hidden;
+	width: 48px;
+	transition: width .4s;
+}
+
+.card__icons {
+	display: flex;
+	column-gap: .5rem;
+}
+
+.card__icon {
+	font-size: 1.25rem;
+	cursor: pointer;
+	transform: scale(0);
+	pointer-events: none;
+	/* opacity: 0; */
+	transition: transform .4s;
+}
+
+.card__icons:nth-child(1) .card__icon:nth-child(2) {
+	transition-delay: .2s;
+}
+
+.card__icons:nth-child(1) .card__icon:nth-child(1) {
+	transition-delay: .4s;
+}
+
+.card__icons:nth-child(2) .card__icon:nth-child(1) {
+	transition-delay: .2s;
+}
+
+.card__icons:nth-child(2) .card__icon:nth-child(2) {
+	transition-delay: .4s;
+}
+
 /* Show social */
 
 
