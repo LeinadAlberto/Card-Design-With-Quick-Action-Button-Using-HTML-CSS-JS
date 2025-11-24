@@ -177,10 +177,35 @@ img {
 }
 
 /* Show social */
+.show-menu {
+	width: 212px;
+}
 
+.show-menu .card__icon {
+	opacity: 1;
+	transform: scale(1);
+	pointer-events: initial;
+}
 
 /* Show icon */
+.show-icon .card__more{
+	opacity: 0;
+	transform: rotate(90deg);
+}
 
+.show-icon .card__close{
+	opacity: 1;
+	transform: rotate(90deg);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 330px) {
+	.card {
+		margin-inline: 1rem;
+	}
+
+	.card__article {
+		width: 100%;
+	}
+}
